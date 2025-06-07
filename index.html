@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт в разработке</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: 100vh;
+            background: #e9ecdf; /* Светлый серо-оливковый фон */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            background: #fff;
+            border-radius: 32px;
+            box-shadow: 0 8px 32px 0 rgba(20, 22, 24, 0.10);
+            padding: 56px 36px 40px 36px;
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+            /* Для эффекта «наклейки» */
+            border: none;
+            position: relative;
+        }
+        .logo {
+            max-width: 120px;
+            width: 100%;
+            margin-bottom: 32px;
+            margin-top: 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .company {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            color: #232323;
+        }
+        .caption {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #636363;
+            font-size: 1.13rem;
+            font-weight: 400;
+        }
+        @media (max-width: 500px) {
+            .card {
+                padding: 28px 8px 20px 8px;
+                border-radius: 18px;
+                max-width: 95vw;
+            }
+            .logo {
+                max-width: 70px;
+            }
+            .company {
+                font-size: 1rem;
+            }
+            .caption {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="logo.png" alt="Логотип" class="logo">
+        <div class="company">Научно-технический<br>центр «Геомеханика»</div>
+        <div class="caption">Сайт в разработке</div>
+    </div>
+</body>
+</html>
